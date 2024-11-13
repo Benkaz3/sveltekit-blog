@@ -1,16 +1,16 @@
 :root {
 	/* Colors */
 	--accent: #f39c12; /* Warm amber accent color */
-	--background: #000; /* Near black background */
+	--background: #030712; /* Near black background */
 	--lightAccent: #f8c471; /* Lighter amber for softer accents */
 	--lighterAccent: #f1c40f; /* Slightly lighter amber for highlights */
 	--dark: #2c3e50; /* Dark gray for borders or secondary elements */
 	--darker: #1c2833; /* Very dark gray for text on light backgrounds */
 	--slate: #34495e; /* Slate gray for headers or secondary text */
-	--grey: #ffffff90;
+	--grey: #e5e7eb;
 
-	--white: #d4d4d4; /* Pure white for highlights or buttons */
-	--black: #000; /* Pure black for deep contrast (used sparingly) */
+	--white: #f3f4f6; /* Pure white for highlights or buttons */
+	--black: #030712; /* Pure black for deep contrast (used sparingly) */
 
 	--ink: var(--white); /* Text color */
 	--paper: var(--background); /* Background for paper-like elements */

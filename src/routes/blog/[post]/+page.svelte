@@ -44,7 +44,7 @@
 
 	<h1>{title}</h1>
 
-	<div class="meta">
+	<div class="meta published-date">
 		<b>Published:</b>
   {formatDate(date)}
 		<br />
@@ -69,3 +69,104 @@
 		</aside>
 	{/if}
 </article>
+
+<style>
+	/* General styles for the blog post layout */
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 !important; 
+  line-height: 1.8;
+  font-family: var(--primaryFont, sans-serif);
+  color: var(--ink, #333);
+  background-color: var(--paper, #fff);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and title styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent, #333);
+}
+
+.post :global(h2) {
+	margin-top: 3rem; 
+	margin-bottom: 1.5rem;
+}
+
+.post :global(hr) {
+	height: 0.5px !important;
+	padding: 0 2rem; 
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--grey, #666);
+  margin-bottom: 1.5rem;
+}
+
+.published-date b {
+  color: var(--accent, #666);
+}
+
+/* Post content styling */
+.svelte-content :global(h2) {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  color: var(--slate, #444);
+}
+.svelte-content :global(h3) {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.svelte-content :global(p) {
+  margin: 1rem 0;
+}
+
+/* Category/tag styling */
+.post-category {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.post-category h6 {
+  font-size: 1rem;
+  color: var(--accent, #444);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.post-category__categories {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-category__categories li {
+  background-color: var(--accent, #f8c471);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.post-category__categories li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 600px) {
+  .post {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+</style>
