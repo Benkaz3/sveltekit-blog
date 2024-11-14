@@ -1,55 +1,38 @@
-<script>
-	import Callout from '$lib/components/Callout.svelte'
-</script>
-
-
 <svelte:head>
-	<title>Contact</title>
+	<title>Let’s Chat!</title>
+	<meta name="description" content="Don’t be shy—drop me a line and let’s connect!" />
 </svelte:head>
 
+<section>
+	<h1>Get in touch!</h1>
+	<p>
+		Got a question, a proposal, or just feel like saying hey? I’m all ears!
+		Drop me a line anytime—I’d love to connect.
+	</p>
+	<p>
+		Email: 
+		<a href="mailto:tran.dung@hotmail.com">tran.dung@hotmail.com</a>
+	</p>
+</section>
 
-<h1>Contact</h1>
-
-This starter was made by Josh Collinsworth. You can <a rel="external" href="https://joshcollinsworth.com/contact">get in touch with Josh here</a>.
-
-If you're using this starter for your own site, feel free to delete this page, or replace it with a contact page of your own. (I'm a big fan of <a href="https://docs.netlify.com/forms/setup/">Netlify forms</a>, personally.)
-
-<Callout>This form does nothing! It's just here to show default styling.</Callout>
-
-<form on:submit|preventDefault>
-	<div class="form-section">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="First name" />
-	</div>
-	
-	<div class="form-section">
-		<label for="email">Email</label>
-		<input type="email" id="email" placeholder="Email address" />
-	</div>
-
-	<fieldset>
-		<legend>
-			Which option?
-		</legend>
-
-		<div>
-			<input type="radio" name="s" id="s1" value="s1">
-			<label for="s1">Option 1</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s2" value="s2">
-			<label for="s2">Option 2</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s3" value="s3">
-			<label for="s3">Option 3</label>
-		</div>
-	</fieldset>
-
-	<div class="form-section">
-		<input type="checkbox" id="c1" >
-		<label for="c1">Sign me up for something!</label>
-	</div>
-
-	<input type="submit" value="Do nothing!">
-</form>
+<style>
+	h1 {
+		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		line-height: 1.5;
+	}
+	a {
+		color: var(--accent); /* A medium blue for the link */
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	section {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+</style>
