@@ -142,16 +142,21 @@ footer a::before {
 
 @media (min-width: 48rem) {
 	footer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 42rem;
+		margin: 2rem auto; 
 		flex-wrap: nowrap;
+		gap: 4rem; 
 	}
 
 	footer nav {
-		border-right: 1px solid var(--dark);
 		padding-right: 2rem;
 	}
 
 	footer ul {
-		flex-direction: row;
+		/* flex-direction: row; */
 		justify-content: flex-start;
 	}
 }

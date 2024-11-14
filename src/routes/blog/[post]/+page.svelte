@@ -4,7 +4,7 @@
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
-	const { PostContent } = data;
+  const { PostContent } = data;
 
 	function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', {
@@ -68,6 +68,20 @@
 			</ul>
 		</aside>
 	{/if}
+  <a href="/blog" class="back-to-parent">Back to Blog</a>
+  <!-- <div class="post-navigation">
+    {#if previousPost}
+      <a href="/blog/{previousPost.slug}" class="previous-post">
+        ← Previous Post: {previousPost.title}
+      </a>
+    {/if}
+
+    {#if nextPost}
+      <a href="/blog/{nextPost.slug}" class="next-post">
+        Next Post: {nextPost.title} →
+      </a>
+    {/if}
+  </div> -->
 </article>
 
 <style>
@@ -82,6 +96,22 @@
   background-color: var(--paper, #fff);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-parent {
+  text-decoration: none;
+  color: var(--accent);
+  position: relative;
+  padding-left: 1.5rem; 
+}
+
+.back-to-parent::before {
+  content: '⟵'; /* Unicode arrow symbol */
+	position: absolute;
+	left: 0; /* Position the arrow before the text */
+	font-size: 1.2rem; /* Adjust the size of the arrow */
+  /* padding-right: 1rem;  */
+  top: -0.5rem;
 }
 
 /* Header and title styling */
@@ -107,9 +137,9 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.published-date b {
+/* .published-date b {
   color: var(--accent, #666);
-}
+} */
 
 /* Post content styling */
 .svelte-content :global(h2) {
@@ -132,10 +162,10 @@ h1 {
 }
 
 .post-category h6 {
-  font-size: 1rem;
-  color: var(--accent, #444);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--grey, #444);
+  /* font-weight: bold; */
+  margin-bottom: -0.75rem;
 }
 
 .post-category__categories {
@@ -146,12 +176,12 @@ h1 {
 }
 
 .post-category__categories li {
-  background-color: var(--accent, #f8c471);
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
+  color: var(--accent);
   font-size: 0.85rem;
+  letter-spacing: -0.02em; /* Reduces space between characters */
+  line-height: 1.2; /* Adjusts line spacing, making it tighter */
 }
+
 
 .post-category__categories li a {
   color: inherit;

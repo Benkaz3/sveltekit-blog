@@ -6,14 +6,26 @@
 <footer>
 	<nav>
 		<ul>
-			<li><a href="/api/rss.xml" data-sveltekit-reload>rss</a></li>
-			<li><a href="/">home</a></li>
+			<li>
+	<a 
+		href="/api/rss.xml" 
+		target="_blank" 
+		aria-label="RSS Feed" data-sveltekit-reload>
+		rss
+	</a>
+</li>
+<li>
+	<a href="https://github.com/Benkaz3/sveltekit-blog" 
+	   target="_blank" 
+	   rel="noopener noreferrer" 
+	   aria-label="GitHub Source Code">
+		source
+	</a>
+</li>
+
 		</ul>
 	</nav>
-	
-	<!-- <nav>
-		<NavItems />
-	</nav> -->
+
 
 	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>
