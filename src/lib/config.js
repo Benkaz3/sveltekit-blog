@@ -5,12 +5,12 @@
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/
 
-export const siteTitle = "Nước Mắm OG: The Marketing Technologist's Playbook";
+export const siteTitle = "Dũng Trần | The Marketing Technologist's Playbook";
 export const siteDescription =
 	'Meet Dũng—a seasoned marketer turned tech enthusiast, blending branding, consumer psychology, and creative strategy with a dash of computer science. Get ready for data-driven insights and cutting-edge digital marketing solutions that are shaking things up in Vietnam’s fast-paced market. Stay tuned for fresh perspectives on how tech is rewriting the marketing playbook.';
 export const siteURL = 'example.com';
 export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter';
-export const siteAuthor = "- Nước Mắm OG: The Marketing Technologist's Playbook";
+export const siteAuthor = "- Dũng Trần | The Marketing Technologist's Playbook";
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10;
