@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-auto": "^3.3.1"
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"sitemap": "^8.0.0"
 	}
 }
