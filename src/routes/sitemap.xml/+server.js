@@ -4,7 +4,7 @@ import path from 'path';
 import { Readable } from 'stream';
 
 export const GET = async () => {
-	const hostname = 'dungtran.me'; // Replace with your actual domain
+	const hostname = 'https://dungtran.me'; // Replace with your actual domain
 
 	// Static routes
 	const staticRoutes = [
