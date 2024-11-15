@@ -1,62 +1,64 @@
-import { SitemapStream, streamToPromise } from 'sitemap';
-import fs from 'fs';
-import path from 'path';
-import { Readable } from 'stream';
+const site = 'https://dungtran.me'; // change this to reflect your domain
+const categories = [
+	'marketing',
+	'principles',
+	'performance marketing',
+	'branding',
+	'sveltekit',
+	'web',
+	'css',
+	'markdown'
+]; // replace with your actual categories
+const posts = ['my-marketing-principles', 'performance-vs-brand', 'syntax-highlighting-example']; // populate this with all your actual post slugs
 
-export const GET = async () => {
-	const hostname = 'https://dungtran.me'; // Replace with your actual domain
+/** @type {import('./$types').RequestHandler} */
+export async function GET() {
+	const body = sitemap(posts, categories);
+	const response = new Response(body);
+	response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
+	response.headers.set('Content-Type', 'application/xml');
+	return response;
+}
 
-	// Static routes
-	const staticRoutes = [
-		{ url: '/', changefreq: 'daily', priority: 1.0 },
-		{ url: '/contact', changefreq: 'monthly', priority: 0.7 },
-		{ url: '/about', changefreq: 'monthly', priority: 0.7 }
-	];
-
-	// Fetch blog posts and extract categories and tags (future-proofing for tags)
-	const postsDir = path.resolve('src/lib/posts');
-	const files = fs.readdirSync(postsDir).filter((file) => file.endsWith('.md'));
-
-	const blogRoutes = files.map((file) => {
-		const filePath = path.join(postsDir, file);
-		const post = import(filePath); // Dynamically import the post file
-
-		return post.then((content) => {
-			const metadata = content.metadata; // Access the metadata directly
-			const slug = file.replace('.md', '');
-			const routes = [{ url: `/blog/${slug}`, changefreq: 'weekly', priority: 0.8 }];
-
-			// Add routes for categories if any
-			if (metadata.category) {
-				routes.push({
-					url: `/blog/category/${metadata.category}`,
-					changefreq: 'monthly',
-					priority: 0.7
-				});
-			}
-
-			// Future-proof: Add routes for tags if they exist in metadata
-			if (metadata.tags && Array.isArray(metadata.tags)) {
-				metadata.tags.forEach((tag) => {
-					routes.push({
-						url: `/blog/tag/${tag}`,
-						changefreq: 'monthly',
-						priority: 0.7
-					});
-				});
-			}
-
-			return routes;
-		});
-	});
-
-	const allRoutes = [...staticRoutes, ...(await Promise.all(blogRoutes)).flat()];
-
-	// Generate sitemap
-	const stream = new SitemapStream({ hostname });
-	const data = await streamToPromise(Readable.from(allRoutes).pipe(stream));
-
-	return new Response(data, {
-		headers: { 'Content-Type': 'application/xml' }
-	});
-};
+const sitemap = (posts, categories) => `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <url>
+    <loc>${site}/</loc>
+    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>${site}/blog</loc>
+    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>${site}/contact</loc>
+    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  ${posts
+		.map(
+			(post) => `
+  <url>
+    <loc>${site}/blog/${post}</loc>
+    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>`
+		)
+		.join('')}
+  ${categories
+		.map(
+			(category) => `
+  <url>
+    <loc>${site}/blog/category/${encodeURIComponent(category)}</loc>
+    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>`
+		)
+		.join('')}
+</urlset>`;
