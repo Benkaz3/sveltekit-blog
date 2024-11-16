@@ -1,202 +1,174 @@
-<!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
-		data.meta;
-  const { PostContent } = data;
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta;
+	const { PostContent } = data;
 
 	function formatDate(date) {
-  return new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
-
+		return new Date(date).toLocaleDateString('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+		});
+	}
 </script>
 
 <svelte:head>
-	<!-- Be sure to add your image files and un-comment the lines below -->
 	<title>{title}</title>
-	<meta data-key="description" name="description" content={excerpt} />
+	<meta name="description" content={excerpt} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<!-- <meta property="og:image" content="https://yourdomain.com/image_path" /> -->
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
 <article class="post">
-	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<!-- <img
-		class="cover-image"
-		src={coverImage}
-		alt=""
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
-	/> -->
+	{#if coverImage}
+		<img
+			class="cover-image"
+			src={coverImage}
+			alt=""
+			style="aspect-ratio: {coverWidth} / {coverHeight};"
+			width={coverWidth}
+			height={coverHeight}
+		/>
+	{/if}
 
 	<h1>{title}</h1>
 
-	<div class="meta published-date">
-		<b>Published:</b>
-  {formatDate(date)}
-		<br />
-		<b>Updated:</b>
-  {formatDate(updated)}
+	<div class="meta">
+		<p><strong>Published:</strong> {formatDate(date)}</p>
+		{#if updated && updated !== date}
+			<p><strong>Updated:</strong> {formatDate(updated)}</p>
+		{/if}
 	</div>
 
-	<svelte:component this={PostContent} />
+	<section class="svelte-content">
+		<svelte:component this={PostContent} />
+	</section>
 
 	{#if categories}
 		<aside class="post-category">
-			<h6>TAGS</h6>
+			<h6>Tags</h6>
 			<ul class="post-category__categories">
 				{#each categories as category}
 					<li>
-						<a href="/blog/category/{category}/">
-							{category}
-						</a>
+						<a href="/blog/category/{category}/">{category}</a>
 					</li>
 				{/each}
 			</ul>
 		</aside>
 	{/if}
-  <a href="/blog" class="back-to-parent">Back to Blog</a>
-  <!-- <div class="post-navigation">
-    {#if previousPost}
-      <a href="/blog/{previousPost.slug}" class="previous-post">
-        ← Previous Post: {previousPost.title}
-      </a>
-    {/if}
 
-    {#if nextPost}
-      <a href="/blog/{nextPost.slug}" class="next-post">
-        Next Post: {nextPost.title} →
-      </a>
-    {/if}
-  </div> -->
+	<a href="/blog" class="back-to-parent">Back to Blog</a>
 </article>
 
 <style>
-	/* General styles for the blog post layout */
-.post {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 !important; 
-  line-height: 1.8;
-  font-family: var(--primaryFont, sans-serif);
-  color: var(--ink, #333);
-  background-color: var(--paper, #fff);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+	/* Blog post container */
+	.post {
+		max-width: 42rem;
+		margin: 2rem auto;
+		padding: 0 !important;
+		line-height: 1.8;
+		font-family: var(--primaryFont, sans-serif);
+		color: var(--ink, #333);
+		background-color: var(--paper, #fff);
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
 
-.back-to-parent {
-  text-decoration: none;
-  color: var(--accent);
-  position: relative;
-  padding-left: 1.5rem; 
-}
+	/* Title */
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+		color: var(--accent, #333);
+	}
 
-.back-to-parent::before {
-  content: '⟵'; /* Unicode arrow symbol */
-	position: absolute;
-	left: 0; /* Position the arrow before the text */
-	font-size: 1.2rem; /* Adjust the size of the arrow */
-  /* padding-right: 1rem;  */
-  top: -0.5rem;
-}
+	/* Meta information */
+	.meta {
+		margin-bottom: 2rem;
+		font-size: 0.9rem;
+		color: var(--grey, #666);
+	}
 
-/* Header and title styling */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--accent, #333);
-}
+	.meta p {
+		margin: 0.5rem 0;
+	}
 
-.post :global(h2) {
-	margin-top: 3rem; 
-	margin-bottom: 1.5rem;
-}
+	/* Content styling */
+	.svelte-content {
+		margin-top: 2rem;
+	}
 
-.post :global(hr) {
-	height: 0.5px !important;
-	padding: 0 2rem; 
-}
+	.svelte-content :global(h2),
+	.svelte-content :global(h3) {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		color: var(--white, #444);
+	}
 
-.meta {
-  font-size: 0.9rem;
-  color: var(--grey, #666);
-  margin-bottom: 1.5rem;
-}
+	.svelte-content :global(p) {
+		margin: 1rem 0;
+	}
 
-/* .published-date b {
-  color: var(--accent, #666);
-} */
+	/* Categories and tags */
+	.post-category {
+		margin-top: 2rem;
+		font-size: 0.9rem;
+	}
 
-/* Post content styling */
-.svelte-content :global(h2) {
-  font-size: 1.75rem;
-  margin-top: 2rem;
-  color: var(--slate, #444);
-}
-.svelte-content :global(h3) {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-.svelte-content :global(p) {
-  margin: 1rem 0;
-}
+	.post-category h6 {
+		font-size: 0.85rem;
+		color: var(--grey, #444);
+		margin-bottom: 0.5rem;
+	}
 
-/* Category/tag styling */
-.post-category {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
+	.post-category__categories {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
 
-.post-category h6 {
-  font-size: 0.75rem;
-  color: var(--grey, #444);
-  /* font-weight: bold; */
-  margin-bottom: -0.75rem;
-}
+	.post-category__categories li {
+		font-size: 0.85rem;
+	}
 
-.post-category__categories {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
-}
+	.post-category__categories li a {
+		text-decoration: none;
+		color: var(--accent, #0070f3);
+	}
 
-.post-category__categories li {
-  color: var(--accent);
-  font-size: 0.85rem;
-  letter-spacing: -0.02em; /* Reduces space between characters */
-  line-height: 1.2; /* Adjusts line spacing, making it tighter */
-}
+	/* Back to Blog link */
+	.back-to-parent {
+		display: inline-block;
+		margin-top: 2rem;
+		text-decoration: none;
+		color: var(--accent, #0070f3);
+		position: relative;
+		padding-left: 1.5rem;
+	}
 
+	.back-to-parent::before {
+		content: '⟵';
+		position: absolute;
+		left: 0;
+		font-size: 1rem;
+		top: 0;
+	}
 
-.post-category__categories li a {
-  color: inherit;
-  text-decoration: none;
-}
+	/* Responsive adjustments */
+	@media (max-width: 768px) {
+		.post {
+			padding: 1.5rem;
+		}
 
-/* Media queries for responsive adjustments */
-@media (max-width: 600px) {
-  .post {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
+		h1 {
+			font-size: 2rem;
+		}
+	}
 </style>

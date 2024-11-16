@@ -8,6 +8,7 @@
 </script>
 
 <ul class="minimal-posts-list">
+	<h4>Recent posts</h4>
 	{#each posts as post}
 		<li class="minimal-post-item">
 			<a href="/blog/{post.slug}" class="no-underline">
@@ -19,6 +20,9 @@
 </ul>
 
 <style>
+	h4 {
+		margin: 1rem 0;
+	}
 	.minimal-posts-list {
 		list-style: none;
 		padding: 0;

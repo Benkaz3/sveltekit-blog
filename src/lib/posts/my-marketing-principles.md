@@ -5,7 +5,7 @@ updated: '2024-04-01'
 categories:
   - 'marketing'
   - 'principles'
-coverImage: '/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg'
+coverImage: '/images/fabrice-villard-Du41jIaI5Ww-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
 excerpt: Dive into my marketing principles—where empathy meets data, and simplicity beats complexity in a fast-paced digital world.

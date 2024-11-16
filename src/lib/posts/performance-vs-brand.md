@@ -5,7 +5,7 @@ updated: '2023-04-28'
 categories:
   - 'performance marketing'
   - 'branding'
-coverImage: '/images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg'
+coverImage: '/images/stephen-dawson-qwtCeJ5cLYs-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
 excerpt: Alright, let’s talk about the supposed rivalry between brand and performance marketing. You know the story—performance ads are the “go-to” for fast results, measurable ROI, and those shiny, short-term metrics that make everyone feel like rockstars. Brand marketing, on the other hand, is like the dependable old friend who plays the long game, quietly building up influence and loyalty over time.
