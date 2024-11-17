@@ -26,7 +26,7 @@
 	.minimal-posts-list {
 		list-style: none;
 		padding: 0;
-		max-width: 800px;
+		max-width: 800px; 
 		margin: 0 auto;
 	}
 

@@ -14,13 +14,13 @@
 				<p class="published-date">{formatDate(post.date)}</p>
 				<a href="/blog/{post.slug}" class="no-underline">
 					<!-- Optional image inclusion for each post -->
-					<!-- <img
+					<img
 					src={post.coverImage}
 					alt=""
 					width={post.coverWidth}
 					height={post.coverHeight}
 					style="aspect-ratio: {post.coverWidth} / {post.coverHeight}"
-					/> -->
+					/>
 					<h2 class="post-title">
 						{post.title}
 					</h2>
@@ -79,6 +79,10 @@
 	.no-underline {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	.post-preview img {
+		border-radius: 5px; /* Adjust the value for desired roundness */
 	}
 
 	/* Media queries for responsive adjustments */
