@@ -1,7 +1,7 @@
 ---
 title: 'Search Wars: The Rise of LLMs vs. Search Engines'
 date: '2024-11-16'
-updated: '2024-11-16'
+updated: '2024-11-20'
 categories:
   - 'technology'
   - 'search engines'
