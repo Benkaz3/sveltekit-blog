@@ -14,17 +14,13 @@
 
 <section class="intro-section">
 	
-	<h1>Về Dũng Làm Marketing</h1>
-	<p><b>Dũng Làm Marketing</b> là nơi tôi chia sẻ và lưu giữ kinh nghiệm làm marketing của mình. 
-		Blog xoay quanh hai chủ đề chính: </p>
-		<ul>
-			<li>Góc nhìn cá nhân về các câu chuyện, tin tức, và công nghệ mới trong lĩnh vực marketing.</li>
-			<li>Hướng dẫn chi tiết cho các khía cạnh technical như Attribution Modeling, Facebook Pixel, Conversion API, v.v.</li>
-		</ul>
-	<p>Tôi đã dành 4 năm để học lập trình với mong muốn tự mày mò tìm hiểu về những công nghệ 
-		được ứng dụng trong Marketing ngày nay. Với kiến thức này, tôi hi vọng sẽ mang lại những
-		nội dung MarTech gần gũi và dễ hiểu cho các marketer từ newbies đến pros. Nếu bạn thấy có ích,
-		hãy thường xuyên ghé <a href="https://dungtran.me">dungtran.me</a> nhé!
+	<h1>Về Dũng Làm MarTech</h1>
+	<p>Tôi quyết định làm <a href="https://dungtran.me">dungtran.me</a> để nó trở thành góc cafe anh chị em trong ngành lui tới, chia 
+		sẻ chuyện làm nghề. Hơn thế nữa, cũng muốn nó là nơi gỡ rối "kỹ thuật" cho rất nhiều bạn còn lúng túng
+		bơi lội với công nghệ. </p>
+		
+	<p>Nội dung chính của blog sẽ xoay quanh các chủ đề kỹ thuật khó gặm - từ tracking đến phân tích dữ liệu và tự dộng hoá. Hi vọng với 
+		hướng tiếp cận gần gũi, đơn giản blog sẽ phần nào có ích cho công việc của các bạn. 
 	</p>
 	<MinimalPostsList posts={data.posts} />
 </section>
