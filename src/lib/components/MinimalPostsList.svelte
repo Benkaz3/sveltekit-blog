@@ -1,14 +1,11 @@
 <script>
 	export let posts = [];
+	import { formatDate } from '$lib/assets/js/formatDate';
 
-	function formatDate(dateString) {
-		const date = new Date(dateString);
-		return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-	}
 </script>
 
 <ul class="minimal-posts-list">
-	<h4>Recent posts</h4>
+	<h4>Bài viết gần đây</h4>
 	{#each posts as post}
 		<li class="minimal-post-item">
 			<a href="/blog/{post.slug}" class="no-underline">

@@ -1,13 +1,12 @@
 <svelte:head>
-	<title>Let’s Chat!</title>
+	<title>Liên hệ</title>
 	<meta name="description" content="Don’t be shy—drop me a line and let’s connect!" />
 </svelte:head>
 
 <section>
-	<h1>Get in touch!</h1>
+	<h1>Say hi!</h1>
 	<p>
-		Got a question, a proposal, or just feel like saying hey? I’m all ears!
-		Drop me a line anytime—I’d love to connect.
+		Góp ý, cộng tác hay chỉ say hi!
 	</p>
 	<p>
 		Email: 

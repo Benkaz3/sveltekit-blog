@@ -1,16 +1,10 @@
 <script>
 	export let data;
+	import { formatDate } from '$lib/assets/js/formatDate.js';
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta;
 	const { PostContent } = data;
 
-	function formatDate(date) {
-		return new Date(date).toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-		});
-	}
 </script>
 
 <svelte:head>

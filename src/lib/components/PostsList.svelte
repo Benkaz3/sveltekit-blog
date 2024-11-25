@@ -1,10 +1,8 @@
 <script>
 	export let posts = []
+	import { formatDate } from '$lib/assets/js/formatDate';
 
-	function formatDate(dateString) {
-		const date = new Date(dateString);
-		return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-	}
+
 </script>
 
 <ul class="posts-list">
