@@ -6,7 +6,7 @@
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import { siteTitle, siteURL } from '$lib/config.js';
+	import { siteTitle, siteURL, siteImage, siteDescription } from '$lib/config.js';
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
@@ -42,6 +42,12 @@
 		title={siteTitle}
 		href="http://{siteURL}/api/rss.xml"
 	/>
+	<meta property="og:title" content={siteTitle} />
+	<meta property="og:description" content={siteDescription} />
+	<meta property="og:image" content={siteImage} />
+	<meta property="og:url" content={siteURL} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content={siteImage} />
 </svelte:head>
 
 
