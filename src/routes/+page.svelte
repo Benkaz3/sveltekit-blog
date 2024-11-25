@@ -15,8 +15,8 @@
 <section class="intro-section">
 	
 	<h1>Về Dũng Làm MarTech</h1>
-	<p>Tôi quyết định làm <a href="https://dungtran.me">dungtran.me</a> để nó trở thành góc cafe anh chị em trong ngành lui tới, chia 
-		sẻ chuyện làm nghề. Hơn thế nữa, cũng muốn nó là nơi gỡ rối "kỹ thuật" cho rất nhiều bạn còn lúng túng
+	<p>Blog <a href="https://dungtran.me">dungtran.me</a> là góc cafe anh chị em trong ngành lui tới, chia 
+		sẻ chuyện làm nghề. Hơn thế nữa, tôi cũng muốn nó là nơi gỡ rối "kỹ thuật" cho rất nhiều bạn còn lúng túng
 		bơi lội với công nghệ. </p>
 		
 	<p>Nội dung chính của blog sẽ xoay quanh các chủ đề kỹ thuật khó gặm - từ tracking đến phân tích dữ liệu và tự dộng hoá. Hi vọng với 

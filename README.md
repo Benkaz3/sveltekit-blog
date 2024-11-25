@@ -1,5 +1,5 @@
-# The Marketing Technologist's Playbook
+# Dũng Làm Marketing
 
-Hey, I’m Dũng—a seasoned marketer with deep roots in branding, consumer psychology, and creative strategy. I recently dove into computer science, blending tech and marketing to create data-driven, cutting-edge solutions.
+Tôi quyết định làm dungtran.me để nó trở thành góc cafe anh chị em trong ngành lui tới, chia sẻ chuyện làm nghề. Hơn thế nữa, cũng muốn nó là nơi gỡ rối "kỹ thuật" cho rất nhiều bạn còn lúng túng bơi lội với công nghệ.
 
-Here, I'll share my thoughts on how tech is reshaping marketing.
+Nội dung chính của blog sẽ xoay quanh các chủ đề kỹ thuật khó gặm - từ tracking đến phân tích dữ liệu và tự dộng hoá. Hi vọng với hướng tiếp cận gần gũi, đơn giản blog sẽ phần nào có ích cho công việc của các bạn.
