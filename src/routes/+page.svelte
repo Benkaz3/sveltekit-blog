@@ -15,16 +15,16 @@
 <section class="intro-section">
 	
 	<h1>Về Dũng Làm Marketing</h1>
-	<p><b>dungtran.me</b> là nơi tôi chia sẻ kinh nghiệm làm marketing. Blog có hai nội dung chính.
-		Thứ nhất là những bài viết về góc nhìn của riêng tôi về câu chuyện, tin tức, 
-		công nghệ mới trong lĩnh vực marketing. 
-		Và hai là những hướng dẫn chi tiết cho những mảng có tính technical ví dụ như Atrribution Modeling,
-		FB pixel, Conversion APIs v.v.. 
-	</p>
-	<p>Tôi đã dành 4 năm để học về Khoa học Máy tính với mục tiêu làm cầu nối
-		giữa sáng tạo và công nghệ. Hi vọng rằng trải nghiệm mới trong tech
-		sẽ có ích trong việc tạo ra nội dung MarTech gần gũi, dễ hiểu cho 
-		các marketer từ newbies đến pros. 
+	<p><b>Dũng Làm Marketing</b> là nơi tôi chia sẻ và lưu giữ kinh nghiệm làm marketing của mình. 
+		Blog xoay quanh hai chủ đề chính: </p>
+		<ul>
+			<li>Góc nhìn cá nhân về các câu chuyện, tin tức, và công nghệ mới trong lĩnh vực marketing.</li>
+			<li>Hướng dẫn chi tiết cho các khía cạnh technical như Attribution Modeling, Facebook Pixel, Conversion API, v.v.</li>
+		</ul>
+	<p>Tôi đã dành 4 năm để học lập trình với mong muốn tự mày mò tìm hiểu về những công nghệ 
+		được ứng dụng trong Marketing ngày nay. Với kiến thức này, tôi hi vọng sẽ mang lại những
+		nội dung MarTech gần gũi và dễ hiểu cho các marketer từ newbies đến pros. Nếu bạn thấy có ích,
+		hãy thường xuyên ghé <a href="https://dungtran.me">dungtran.me</a> nhé!
 	</p>
 	<MinimalPostsList posts={data.posts} />
 </section>
@@ -52,6 +52,15 @@
 		font-size: 2rem;
 		color: var(--accent, #333);
 		margin-bottom: 2.5rem !important;
+	}
+
+	.intro-section a {
+		color: var(--accent);
+		text-decoration: none;
+	}
+
+	.intro-section li {
+		font-size: 1rem;
 	}
 
 	.intro-section :global(p) {

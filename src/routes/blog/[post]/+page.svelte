@@ -34,9 +34,9 @@
 	<h1>{title}</h1>
 
 	<div class="meta">
-		<p><strong>Published:</strong> {formatDate(date)}</p>
+		<p><strong>Đăng:</strong> {formatDate(date)}</p>
 		{#if updated && updated !== date}
-			<p><strong>Updated:</strong> {formatDate(updated)}</p>
+			<p><strong>Cập nhật:</strong> {formatDate(updated)}</p>
 		{/if}
 	</div>
 
