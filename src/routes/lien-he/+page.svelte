@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Liên hệ</title>
-	<meta name="description" content="Don’t be shy—drop me a line and let’s connect!" />
+	<meta name="description" content="Liên hệ với Dũng | dungtran.me" />
 </svelte:head>
 
 <section>
