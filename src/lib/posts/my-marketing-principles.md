@@ -3,8 +3,12 @@ title: 'My Marketing Principles'
 date: '2023-10-26'
 updated: '2024-04-01'
 categories:
-  - 'marketing'
-  - 'principles'
+  - 'marketing strategies'
+tags:
+  - 'branding'
+  - 'content strategy'
+  - 'analytics'
+  - 'a/b testing'
 coverImage: '/images/fabrice-villard-Du41jIaI5Ww-unsplash.webp'
 coverWidth: 16
 coverHeight: 9

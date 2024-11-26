@@ -3,8 +3,11 @@ title: 'Brand and Performance Marketing: The Surprising BFFs of Business Growth'
 date: '2023-04-28'
 updated: '2023-04-28'
 categories:
-  - 'performance marketing'
+  - 'digital marketing'
+tags:
+  - 'roi'
   - 'branding'
+  - 'metrics'
 coverImage: '/images/stephen-dawson-qwtCeJ5cLYs-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
