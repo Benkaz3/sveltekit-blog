@@ -1,52 +1,47 @@
-const site = 'https://dungtran.me'; // change this to reflect your domain
-const categories = [
-	'marketing',
-	'principles',
-	'performance marketing',
-	'branding',
-	'sveltekit',
-	'web',
-	'css',
-	'markdown'
-]; // replace with your actual categories
-const posts = ['my-marketing-principles', 'performance-vs-brand', 'syntax-highlighting-example']; // populate this with all your actual post slugs
+import { fetchMetadata } from '$lib/assets/js/fetchMetadata';
+
+const site = 'https://dungtran.me';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET() {
-	const body = sitemap(posts, categories);
+	const { posts, categories, tags } = await fetchMetadata();
+
+	const postSlugs = posts.map((post) => post.slug);
+
+	const body = sitemap(postSlugs, categories, tags);
+
 	const response = new Response(body);
 	response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
 	response.headers.set('Content-Type', 'application/xml');
 	return response;
 }
 
-const sitemap = (posts, categories) => `<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = (postSlugs, categories, tags) => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>${site}/</loc>
-    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>${site}/blog</loc>
-    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>${site}/contact</loc>
-    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <priority>0.80</priority>
   </url>
-  ${posts
+  ${postSlugs
 		.map(
-			(post) => `
+			(slug) => `
   <url>
-    <loc>${site}/blog/${post}</loc>
-    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <loc>${site}/blog/${slug}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <priority>0.80</priority>
   </url>`
 		)
@@ -56,7 +51,17 @@ const sitemap = (posts, categories) => `<?xml version="1.0" encoding="UTF-8"?>
 			(category) => `
   <url>
     <loc>${site}/blog/category/${encodeURIComponent(category)}</loc>
-    <lastmod>2024-11-15T15:35:56+00:00</lastmod>
+    <lastmod>${new Date().toISOString()}</lastmod>
+    <priority>0.64</priority>
+  </url>`
+		)
+		.join('')}
+  ${tags
+		.map(
+			(tag) => `
+  <url>
+    <loc>${site}/blog/tag/${encodeURIComponent(tag)}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
     <priority>0.64</priority>
   </url>`
 		)
