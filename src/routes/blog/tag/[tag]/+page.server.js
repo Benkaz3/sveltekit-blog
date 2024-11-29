@@ -2,6 +2,7 @@ import fetchPosts from '$lib/assets/js/fetchPosts';
 
 export const load = async ({ params }) => {
 	const tag = params.tag;
+	console.log('tag: ', tag);
 	const page = params.page || 1;
 
 	const options = { tag, limit: -1 };
@@ -14,3 +15,4 @@ export const load = async ({ params }) => {
 		total: posts.length
 	};
 };
+// export const prerender = false;

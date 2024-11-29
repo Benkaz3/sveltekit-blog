@@ -21,6 +21,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
+			crawl: true,
 			entries: [
 				'*',
 				'/api/posts/page/*',
@@ -28,9 +29,20 @@ const config = {
 				'/blog/category/*/page/*',
 				'/blog/category/page/',
 				'/blog/category/page/*',
+				'/blog/tag/*/page/',
+				'/blog/tag/*/page/*',
+				'/blog/tag/page/',
+				'/blog/tag/page/*',
 				'/blog/page/',
 				'/blog/page/*'
-			]
+			],
+			handleHttpError: ({ status, path }) => {
+				if (status === 404) {
+					console.warn(`404 on prerendered route: ${path}`);
+					return;
+				}
+				throw new Error(`${status} at ${path}`);
+			}
 		}
 	}
 };

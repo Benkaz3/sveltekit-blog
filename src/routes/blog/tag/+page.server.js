@@ -5,7 +5,7 @@ export const load = async ({ url, fetch }) => {
 	let uniqueTags = {};
 
 	posts.forEach((post) => {
-		post.tags.forEach((category) => {
+		post.tags.forEach((tag) => {
 			if (uniqueTags.hasOwnProperty(tag)) {
 				uniqueTags[tag].count += 1;
 			} else {

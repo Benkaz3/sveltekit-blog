@@ -8,7 +8,7 @@ tags:
   - 'branding'
   - 'content strategy'
   - 'analytics'
-  - 'a/b testing'
+  - 'ab testing'
 coverImage: '/images/fabrice-villard-Du41jIaI5Ww-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
