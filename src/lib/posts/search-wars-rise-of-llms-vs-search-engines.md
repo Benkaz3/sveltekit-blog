@@ -1,5 +1,5 @@
 ---
-title: 'Search Wars: The Rise of LLMs vs. Search Engines'
+title: 'Sự lên ngôi của LLMs và vai trò của Search Engines'
 date: '2024-11-16'
 updated: '2024-11-20'
 categories:
@@ -7,7 +7,7 @@ categories:
 tags:
   - 'seo'
   - 'content strategy'
-  - 'mml'
+  - 'llm'
   - 'search engine'
 coverImage: '/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp'
 coverWidth: 16
@@ -15,42 +15,42 @@ coverHeight: 9
 excerpt: 'LLMs like ChatGPT are changing how we search, but search engines like Google aren’t backing down. Who wins the battle for your attention?'
 ---
 
-# LLMs vs. Search Engines: The Battle for Your Brain Space
+## LLMs vs. Search Engines: Trận chiến tìm kiếm
 
-In the fast-evolving world of search, **Large Language Models (LLMs)** like ChatGPT are shaking up the game. But traditional search engines like Google are far from obsolete—they’re adapting, evolving, and fighting back.
+Không ai còn xa lạ với Large Language Models (LLMs) như ChatGPT nữa. Sau vài năm ra mắt, nhiều người tự hỏi “Liệu LLMs có thay thế Search Engines như Google nữa hay không?”
 
-Who’s winning? Spoiler: it’s not as simple as picking sides. Let’s explore how LLMs and search engines are shaping the future of information retrieval—and what this all means for consumers, brands, and the search ecosystem itself.
+Câu trả lời không đơn thuần là phe nào sẽ thắng. Bài này xin đưa ra một số nhận định về vai trò của 2 công cụ này và ảnh hưởng của chúng tới người tiêu dùng, nhãn hàng và hệ sinh thái tìm kiếm thông tin.
 
-## LLMs: The Conversational Game-Changers
+## LLMs: Kẻ thay đổi cuộc chơi
 
-LLMs are like your chatty, all-knowing friend, serving answers on a silver platter. Unlike Google’s endless list of links, they cut to the chase with conversational, context-aware responses. It’s like having a guide rather than a map. For instance, ask about the best moderate-risk investment strategies, and you won’t just get links to financial blogs—you’ll get a mini financial plan, tailored to you.
+LLMs giống như một người bạn thông thái lúc nào cũng sẵn sàng trả lời bất kì câu hỏi gì của người dùng. Không giống như một danh sách các liên kết của Google, cách trình bày thông tin của LLMs giống như một đoạn chat giữa 2 người. Giả dụ câu hỏi là “Cách để đầu tư hiệu quả với rủi ro vừa phải”, câu trả lời không đơn thuần là đường link các blog tài chính - cái người dùng nhận được là một kế hoạch tài chính nho nhỏ, phù hợp với người dùng đó.
 
-Need layered answers? LLMs shine. Want a gluten-free bread recipe, ideas for pairing, and a guide to finding ingredients? LLMs deliver everything in one tidy package, so you’re not bouncing between tabs like a caffeinated researcher. This approach, combined with innovations like OpenAI’s **SearchGPT**, launched in November 2024, brings real-time data into the mix, such as stock updates, weather forecasts, and breaking news. It’s the first step toward merging the conversational flow of LLMs with the up-to-the-minute accuracy of traditional search.
+Thay vì tìm kiếm và mở cả chục tab để có được thông tin cần tìm với Search Engines, LLMs cung cấp đầy đủ thông tin trong phần trả lời. Từ khái niệm chung, cho đến các khái niệm nhỏ hơn cùng với ví dụ minh hoạ và một cái action plan mà người dùng có thể áp dụng ngay. Hướng tiếp cận này cùng với sự ra đời của SearchGPT vào tháng 11, 2024 với mục đích trả lời sử dụng dữ liệu live như thông tin chứng khoán, dự báo thời tiết và tin tức nóng sẽ biến LLMs trở thành một đối thủ thứ dữ cho Search Engines.
 
-However, LLMs aren’t perfect. They sometimes spout inaccuracies with confidence, a phenomenon known as hallucination. Technologies like **Retrieval-Augmented Generation (RAG)** are helping to address this by cross-checking facts in real time, but until hallucinations are eliminated, LLMs won’t fully dethrone search engines.
+Tuy nhiên, LLMs vẫn còn nhiều hạn chế. Một trong những điểm yếu chí mạng là hiện tượng "ảo giác" — tức là khả năng mô hình cung cấp thông tin sai lệch hoặc không chính xác, đặc biệt là số liệu. Công nghệ mới như **Retrieval-Augmented Generation** (RAG) được sử dụng như 1 công cụ để kiểm tra độ chính xác của thông tin nhưng chỉ khi “ảo giác” được loại bỏ thì LLMs mới có khả năng chiếm ngôi của search engines.
 
-## Traditional Search Engines: Old School, Still Cool
+## Search Engines: cũ nhưng vẫn cool
 
-Search engines may not have the conversational flair of LLMs, but they remain reliable and essential. Google doesn’t just throw answers at you—it backs them up with a vetted, indexed web of information. Need authoritative COVID-19 updates or the latest election results? You’ll get solid, verifiable data—not guesswork. Search engines also offer a buffet of perspectives, enabling users to cross-reference and form their own conclusions, unlike LLMs, which feel more like a pre-plated meal.
+Search engines không nổi bật như LLMs, nhưng vẫn cung cấp thông tin chính xác và đáng tin cậy hơn. Kết quả từ Google đã được kiểm duyệt và xác nhận qua thuật toán phát triển trong nhiều thập kỷ. Khi người dùng cần cập nhật thông tin mới nhất về COVID-19 hay kết quả bầu cử, Google vẫn là nguồn đáng tin cậy.
 
-Then there’s the monetization factor. Google’s **ad-funded SERPs** power much of the internet, from recipe blogs to niche forums. LLMs, lacking a robust monetization model, can’t compete here—yet. Ads in chatbots? Let’s hope it doesn’t come to that.
+Nếu xài Google, người dùng có thể dễ dàng kiểm tra và đối chiếu thông tin từ nhiều nguồn khác nhau. Trong khi đó LLMs cung cấp thông tin một cách trực tiếp và không có cơ chế kiểm tra hay đối chiếu rõ ràng.
 
-## The Hybrid Future
+## Tương lai cộng sinh
 
-The future isn’t LLMs versus search engines—it’s both working together. Imagine asking an LLM for a gluten-free bread recipe and then using a search engine to find local brands that sell gluten-free flour. A hybrid system could seamlessly toggle between the two, giving you the best of both worlds.
+Tương lai gần có lẽ tụi mình sẽ không chứng kiến cuộc đối đầu giữa LLMs và công cụ tìm kiếm – mà là sự kết hợp của cả hai. Tôi có thể dùng LLMs để học cách chăm sóc cây Mai Vàng, sau đó sử dụng công cụ tìm kiếm để tìm các hàng phân uy tín phù hợp với cây Mai tại thành phố mình ở.
 
-For businesses, this evolution is both exciting and terrifying. As LLMs serve answers directly, website visits could drop. Brands will need to shift focus from traffic to **authority**, creating content that’s trusted and frequently referenced by LLMs. The SEO playbook isn’t dead—it’s just evolving. Structured data and retrievability will matter as much as traditional rankings. For real-time relevance, brands must create trending, up-to-date content for search engines while focusing on depth and accuracy for LLMs.
+Đối với các doanh nghiệp, tôi thấy rất nhiều ý kiến lo ngại về vai trò của SEO trong bối cảnh LLMs ngày một phổ biến. Khi LLMs trả lời trực tiếp, traffic website có thể giảm. Các thương hiệu sẽ phải thay đổi trọng tâm từ traffic sang uy tín, tạo ra nội dung được tin tưởng và thường xuyên được LLMs tham khảo.
 
-In the long run, new monetization opportunities may emerge. Content referenced by LLMs could create licensing deals. If your expertise is featured in an AI’s answer, shouldn’t you get paid?
+SEO marketer sẽ không thất nghiệp, chỉ có cách làm SEO sẽ khác. Có lẽ trọng tâm sẽ dần chuyển từ tăng thứ hạng truyền thống về tạo dữ liệu có cấu trúc và tăng khả năng truy xuất cho LLMs. Quan trọng không kém là thương hiệu phải tạo ra nội dung đang thịnh hành đồng thời đảm bảo chiều sâu và tính chính xác của nội dung để LLMs trích dẫn.
 
-## Strong Branding is Non-Negotiable
+Nhìn dài hơn thì nội dung được cập nhật thường xuyên theo xu hướng, đồng thời có tính chính xác cao có thể được bán cho LLMs - phục vụ cho trích dẫn nội dung của creators/brands.
 
-Even if LLMs dominate, your **brand’s reputation** will determine whether consumers remember you. Picture this: A user learns budgeting basics from an LLM. When it’s time to download an app, will they think of you? That depends on whether your branding stood out.
+## Thương Hiệu Mạnh Là Không Thể Thương Lượng
 
-For example, if Mint’s branding is top-notch, users will think of it first—even if they got their budgeting advice from ChatGPT.
+Dù LLMs có chiếm ưu thế, **uy tín** của thương hiệu vẫn sẽ quyết định vị trí của sản phẩm trong đầu người tiêu dùng. Ví dụ: Bà B học được các nguyên tắc cơ bản về lập ngân sách từ một LLM. Khi phải lựa chọn tải app nào, bà B nghĩ tới MoMo hay ứng dụng tài chính nào khác?
 
-## The Age of Answers
+## Thời Đại Của Những Câu Trả Lời
 
-We’re entering a world where **answers, not links,** drive decisions. LLMs deliver seamless, conversational insights, while search engines ensure reliability and depth. For brands, adaptability is key. Focus on quality over quantity, authority over clicks, and trust over traffic. This isn’t just about finding answers; it’s about creating connections. The future belongs to those who embrace both tools and evolve with them to stay ahead.
+Chúng ta đang bước vào một kỷ nguyên mà **câu trả lời**, chứ không phải các một danh sách kết quả tìm kiếm, sẽ là yếu tố quyết định. LLMs cung cấp thông tin một cách liền mạch, trong khi công cụ tìm kiếm giữ vai trò đảm bảo tính chính xác và chiều sâu.
 
-**Ready to dive in?**
+Đối với các thương hiệu, khả năng thích nghi sẽ là yếu tố cốt lõi. Tập trung vào chất lượng hơn là số lượng và sự tin cậy thay vì traffic. Công việc của marketer không chỉ còn là tạo nội dung tốt nữa mà còn là xây dựng kết nối bền vững. Tương lai thuộc về những marketer biết kết hợp và phát triển cả hai công cụ này.
