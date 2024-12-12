@@ -12,7 +12,7 @@ tags:
 coverImage: '/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
-excerpt: 'LLMs like ChatGPT are changing how we search, but search engines like Google aren’t backing down. Who wins the battle for your attention?'
+excerpt: 'Không ai còn xa lạ với Large Language Models (LLMs) như ChatGPT nữa. Sau vài năm ra mắt, nhiều người tự hỏi “Liệu LLMs có thay thế Search Engines như Google nữa hay không?'
 ---
 
 ## LLMs vs. Search Engines: Trận chiến tìm kiếm
