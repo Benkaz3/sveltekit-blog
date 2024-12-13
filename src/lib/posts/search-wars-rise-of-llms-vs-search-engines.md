@@ -1,7 +1,7 @@
 ---
 title: 'Sự lên ngôi của LLMs và vai trò của Search Engines'
 date: '2024-11-16'
-updated: '2024-11-20'
+updated: '2024-12-13'
 categories:
   - 'ai'
 tags:
@@ -9,7 +9,9 @@ tags:
   - 'content strategy'
   - 'llm'
   - 'search engine'
-coverImage: '/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp'
+coverImage: '/images/dunglammartech-llms-vs-search-engines.webp'
+coverImageAlt: Hình minh họa tương lai về 'cuộc chiến tìm kiếm', một robot AI phát sáng với mô hình thần kinh ở một bên và biểu tượng tìm kiếm kỹ thuật số ở bên kia, với các dòng năng lượng xanh đỏ va chạm ở trung tâm
+images:
 coverWidth: 16
 coverHeight: 9
 excerpt: 'ChatGPT có khoảng 100 triệu MAUs sau 2 năm ra mắt. Tương lai của công cụ tìm kiếm như Google sẽ ra sao? Vai trò của SEO sẽ thay đổi thế nào? Bài này xin đưa ra một số nhận định về vai trò của 2 công cụ này và ảnh hưởng của chúng tới người tiêu dùng, nhãn hàng và hệ sinh thái tìm kiếm thông tin trong thời đại của Large Language Models (LLMs).'

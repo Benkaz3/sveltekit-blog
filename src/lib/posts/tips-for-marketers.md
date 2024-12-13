@@ -1,5 +1,5 @@
 ---
-title: 'Tips Cho Marketer Bận Rộn'
+title: '5 Tips Cho Marketer Bận Rộn: Hiệu Quả và Thực Chiến'
 date: '2023-10-26'
 updated: '2024-04-01'
 categories:
@@ -9,11 +9,15 @@ tags:
   - 'content strategy'
   - 'analytics'
   - 'ab testing'
-coverImage: '/images/fabrice-villard-Du41jIaI5Ww-unsplash.webp'
+coverImage: '/images/dunglammartech-tips-for-marketers.webp'
+coverImageAlt: Bí quyết thành công cho marketer, chiến lược, công cụ, và kỹ thuật được trình bày sinh động qua infographic đầy màu sắc và sáng tạo
+images:
 coverWidth: 16
 coverHeight: 9
-excerpt: Chia sẻ vài tips đúc kết từ những năm lăn lộn trong nghề. Cái nào hợp lý và làm được thì vọc liền nha!
+excerpt: Những tips thực chiến từ kinh nghiệm làm nghề giúp marketer tiết kiệm thời gian và tối ưu hiệu quả.
 ---
+
+Làm marketing trong thời đại số bận rộn và áp lực không ít. Dưới đây là những tips đúc kết từ kinh nghiệm thực tế giúp bạn tối ưu công việc, hiểu khách hàng sâu sắc hơn, và đưa ra quyết định dựa trên dữ liệu.
 
 ## Đằng sau số liệu là con người
 
@@ -41,7 +45,7 @@ Nếu có mâu thuẫn giữa data và trực giác, hãy chọn data.
 
 Không phủ nhận vai trò của kinh nghiệm và cảm nhận khi định hướng và lên kế hoạch, nhưng dữ liệu cung cấp cái nhìn chính xác và khách quan hơn về hành vi và xu hướng của khách hàng. Dữ liệu giúp marketer tránh những sai lầm do cảm tính. Việc đặt niềm tin vào dữ liệu cũng giúp công việc tụi mình trở nên minh bạch và dễ đo lường hơn.
 
-## Test, test nữa, test mãi
+## Luôn Luôn Kiểm Thử (A/B Testing)
 
 Amazon làm 1,000 A/B tests mỗi ngày để tối ưu hoá giao diện và trải nghiệm người dùng.
 

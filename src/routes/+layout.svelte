@@ -14,7 +14,6 @@
 
 	
 	$: currentPage.set(data.path);
-	console.log(data.path)
 
 	const isBlogPost = data.path?.startsWith('/blog/');
 

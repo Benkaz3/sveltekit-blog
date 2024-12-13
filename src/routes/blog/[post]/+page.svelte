@@ -2,7 +2,7 @@
 	export let data;
 	import { formatDate } from '$lib/assets/js/formatDate.js';
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, tags } = data.meta;
+	const { title, excerpt, date, updated, coverImage, coverImageAlt, coverWidth, coverHeight, categories, tags } = data.meta;
 	const { PostContent } = data;
 
 </script>
@@ -25,7 +25,7 @@
 		<img
 			class="cover-image"
 			src={coverImage}
-			alt=""
+			alt={coverImageAlt}
 			style="aspect-ratio: {coverWidth} / {coverHeight};"
 			width={coverWidth}
 			height={coverHeight}
