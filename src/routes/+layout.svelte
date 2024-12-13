@@ -40,7 +40,7 @@
 		rel="alternate"
 		type="application/rss+xml"
 		title={siteTitle}
-		href="http://{siteURL}/api/rss.xml"
+		href="{siteURL}/api/rss.xml"
 	/>
 	<meta property="og:title" content={siteTitle} />
 	<meta property="og:description" content={siteDescription} />
