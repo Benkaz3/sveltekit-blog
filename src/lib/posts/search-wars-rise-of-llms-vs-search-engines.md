@@ -12,7 +12,7 @@ tags:
 coverImage: '/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp'
 coverWidth: 16
 coverHeight: 9
-excerpt: 'Không ai còn xa lạ với Large Language Models (LLMs) như ChatGPT nữa. Sau vài năm ra mắt, nhiều người tự hỏi “Liệu LLMs có thay thế Search Engines như Google nữa hay không?'
+excerpt: 'ChatGPT có khoảng 100 triệu MAUs sau 2 năm ra mắt. Tương lai của công cụ tìm kiếm như Google sẽ ra sao? Vai trò của SEO sẽ thay đổi thế nào? Bài này xin đưa ra một số nhận định về vai trò của 2 công cụ này và ảnh hưởng của chúng tới người tiêu dùng, nhãn hàng và hệ sinh thái tìm kiếm thông tin trong thời đại của Large Language Models (LLMs).'
 ---
 
 ## LLMs vs. Search Engines: Trận chiến tìm kiếm
