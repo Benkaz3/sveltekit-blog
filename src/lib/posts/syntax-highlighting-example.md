@@ -1,7 +1,7 @@
 ---
 title: 'Syntax highlighting with mdsvex'
-date: '2023-01-05'
-updated: '2023-01-05'
+date: '2024-12-13'
+updated: '2024-12-13'
 categories:
   - 'web development'
 tags:
