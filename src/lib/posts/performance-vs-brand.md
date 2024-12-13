@@ -8,13 +8,17 @@ tags:
   - 'roi'
   - 'branding'
   - 'metrics'
-coverImage: '/images/stephen-dawson-qwtCeJ5cLYs-unsplash.webp'
+coverImage: '/images/dunglammartech-performance-marketing-vs-brand-marketing.webp'
 coverWidth: 16
 coverHeight: 9
+images:
+  - '/images/dunglammartech-performance-marketing-vs-brand-marketing.webp'
 excerpt: Alright, let’s talk about the supposed rivalry between brand and performance marketing. You know the story—performance ads are the “go-to” for fast results, measurable ROI, and those shiny, short-term metrics that make everyone feel like rockstars. Brand marketing, on the other hand, is like the dependable old friend who plays the long game, quietly building up influence and loyalty over time.
 ---
 
 Alright, let’s talk about the supposed rivalry between brand and performance marketing. You know the story—performance ads are the “go-to” for fast results, measurable ROI, and those shiny, short-term metrics that make everyone feel like rockstars. Brand marketing, on the other hand, is like the dependable old friend who plays the long game, quietly building up influence and loyalty over time. But the new study from Tracksuit and TikTok? It’s proof that these two aren’t actually enemies—they’re BFFs that work better together.
+
+![Performance vs Brand](/images/dunglammartech-performance-marketing-vs-brand-marketing.webp 'Performance vs Brand - The Frenemy Showdown')
 
 ## Brand vs. Performance: The Frenemy Showdown
 

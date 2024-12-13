@@ -14,8 +14,10 @@
 
 	
 	$: currentPage.set(data.path);
+	console.log(data.path)
 
-	
+	const isBlogPost = data.path?.startsWith('/blog/');
+
 	onMount(() => {
 		const navRoutes = navItems.map((item) => item.route);
 		preloadCode(...navRoutes);
@@ -42,12 +44,14 @@
 		title={siteTitle}
 		href="{siteURL}/api/rss.xml"
 	/>
-	<meta property="og:title" content={siteTitle} />
-	<meta property="og:description" content={siteDescription} />
-	<meta property="og:image" content={siteImage} />
-	<meta property="og:url" content={siteURL} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content={siteImage} />
+	{#if !isBlogPost}
+		<meta property="og:title" content={siteTitle} />
+		<meta property="og:description" content={siteDescription} />
+		<meta property="og:image" content={siteImage} />
+		<meta property="og:url" content={siteURL} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content={siteImage} />
+	{/if}
 </svelte:head>
 
 
