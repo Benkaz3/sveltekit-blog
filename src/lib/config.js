@@ -4,7 +4,7 @@ export const siteDescription =
 export const siteURL = 'https://www.dungtran.me';
 export const siteImage = `${siteURL}/images/dungtran-og-image.png`;
 export const siteLink = 'https://www.dungtran.me';
-export const siteAuthor = '- Dũng Trần | The Marketing Technologist';
+export const siteAuthor = '- Dũng Trần';
 
 export const postsPerPage = 10;
 
