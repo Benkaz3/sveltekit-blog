@@ -14,7 +14,7 @@ coverImageAlt: Hình minh họa tương lai về 'cuộc chiến tìm kiếm', m
 images:
 coverWidth: 16
 coverHeight: 9
-excerpt: 'ChatGPT có khoảng 100 triệu MAUs sau 2 năm ra mắt. Tương lai của công cụ tìm kiếm như Google sẽ ra sao? Vai trò của SEO sẽ thay đổi thế nào? Bài này xin đưa ra một số nhận định về vai trò của 2 công cụ này và ảnh hưởng của chúng tới người tiêu dùng, nhãn hàng và hệ sinh thái tìm kiếm thông tin trong thời đại của Large Language Models (LLMs).'
+excerpt: 'ChatGPT có khoảng 100 triệu MAUs sau 2 năm ra mắt. Tương lai của SEO sẽ ra sao?'
 ---
 
 ## LLMs vs. Search Engines: Trận chiến tìm kiếm

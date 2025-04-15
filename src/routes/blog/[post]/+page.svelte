@@ -35,7 +35,7 @@
 	<h1>{title}</h1>
 
 	<div class="meta">
-		<p><strong>Đăng:</strong> {formatDate(date)}</p>
+		<p><strong></strong> {formatDate(date)}</p>
 		{#if updated && updated !== date}
 			<p><strong>Cập nhật:</strong> {formatDate(updated)}</p>
 		{/if}
@@ -81,7 +81,7 @@
 		line-height: 1.8;
 		font-family: var(--primaryFont, sans-serif);
 		color: var(--ink, #333);
-		background-color: var(--paper, #fff);
+		/* background-color: var(--paper, #fff); */
 		border-radius: 8px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	}
@@ -178,7 +178,7 @@
 	text-decoration: none;
 	color: var(--accent, #0070f3);
 	padding: 0.25rem 0.5rem;
-	background-color: var(--dark, #f0f0f0);
+	/* background-color: var(--dark, #f0f0f0); */
 	border-radius: 4px;
 	transition: background-color 0.3s, color 0.3s;
 }

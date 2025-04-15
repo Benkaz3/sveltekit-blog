@@ -4,5 +4,5 @@ export function formatDate(date) {
 		month: 'long',
 		day: 'numeric'
 	});
-	return formattedDate.replace(/^(\d+)\s+tháng/, '$1 tháng');
+	return formattedDate.replace(/^(\d+)\s+tháng/i, '$1 THÁNG');
 }

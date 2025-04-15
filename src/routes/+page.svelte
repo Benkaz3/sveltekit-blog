@@ -29,10 +29,8 @@
 
 <style>
 	.intro-section {
-		background-color: var(--paper, #fff);
-		padding: 0 !important;
+		padding: 0 1.5rem; 
 		border-radius: 8px;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 		max-width: 900px;
 		margin: 0 auto;
 	}

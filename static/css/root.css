@@ -1,18 +1,148 @@
+/* Base Focus Styles */
 *:focus {
-	outline: 2px solid var(--accent);
-	outline-offset: 2px;
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(230, 126, 34, 0.1);
+}
+
+/* Remove focus outline from main content area */
 main:focus {
-	outline: none;
+    outline: none;
 }
 
+/* Base Body Styles */
 body {
-	margin: 0;
-	min-height: 100vh;
-	color: var(--ink);
-	font-family: var(--primaryFont);
-	background: var(--paper);
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: var(--primaryFont);
+    background: var(--background);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Base Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--darker);
+    line-height: 1.2;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    color: var(--dark);
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--lightAccent);
+}
+
+/* Selection Styling */
+::selection {
+    background: rgba(230, 126, 34, 0.2);
+    color: var(--darker);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--paper);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 6px;
+    border: 3px solid var(--paper);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--slate);
+}
+
+/* Base Layout */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 48rem) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    @page {
+        margin: 2cm;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+    body {
+        --accent: #d35400;
+        --lightAccent: #c0392b;
+    }
+
+    *:focus {
+        outline: 3px solid var(--accent);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

@@ -14,7 +14,7 @@ coverWidth: 16
 coverHeight: 9
 images:
   - '/images/dunglammartech-performance-marketing-vs-brand-marketing-01.webp'
-excerpt: Let’s talk about the supposed rivalry between brand and performance marketing. Performance ads deliver fast results and measurable ROI, while brand marketing builds long-term loyalty and influence. However, a new study from Tracksuit and TikTok reveals that these two aren’t enemies—they work better together, driving even greater business growth.
+excerpt: Let’s talk about the supposed rivalry between brand and performance marketing.
 ---
 
 Alright, let’s talk about the supposed rivalry between brand and performance marketing. You know the story—performance ads are the “go-to” for fast results, measurable ROI, and those shiny, short-term metrics that make everyone feel like rockstars. Brand marketing, on the other hand, is like the dependable old friend who plays the long game, quietly building up influence and loyalty over time. But the new study from Tracksuit and TikTok? It’s proof that these two aren’t actually enemies—they’re BFFs that work better together.

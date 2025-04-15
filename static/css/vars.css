@@ -1,23 +1,33 @@
+
 :root {
-	/* Colors */
-	--accent: #f39c12;
-	--background: #030712;
-	--lightAccent: #f8c471;
-	--lighterAccent: #f1c40f;
-	--dark: #2c3e50;
-	--darker: #1c2833;
-	--slate: #34495e;
-	--grey: #9ca3af;
+    /* Colors */
+    /* Primary accent - maintaining brand color but slightly muted for light theme */
+    --accent: #e67e22;
+    --lightAccent: #f39c12;
+    --lighterAccent: #f1c40f;
 
-	--white: #f3f4f6;
-	--black: #030712;
+    /* Background and surface colors - using subtle grays for depth */
+    --background: #ffffff;
+    --paper: #f8fafc;
+    
+    /* Neutral colors - for text and UI elements */
+    --dark: #334155;
+    --darker: #1e293b;
+    --slate: #64748b;
+    --grey: #94a3b8;
+    --lightGrey: rgb(230, 230, 230);
 
-	--ink: var(--white);
-	--paper: var(--background);
+    /* High contrast colors for accessibility */
+    --white: #ffffff;
+    --black: #0f172a;
 
-	/* Font Replacements */
-	--accentFont: 'Georgia', 'Times', serif;
-	--primaryFont: 'Inter', 'Roboto', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	--codeFont: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+    /* Text colors - ensuring WCAG compliance */
+    --ink: var(--darker);
+
+    /* Font Replacements - maintained but optimized for light theme readability */
+    --accentFont: 'Georgia', 'Times', serif;
+    --primaryFont: 'Inter', 'Roboto', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --codeFont: 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
+    --dateFont: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Compact Display', 'SF Compact Text', ui-sans-serif, system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
