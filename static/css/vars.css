@@ -2,9 +2,9 @@
 :root {
     /* Colors */
     /* Primary accent - maintaining brand color but slightly muted for light theme */
-    --accent: #e67e22;
-    --lightAccent: #f39c12;
-    --lighterAccent: #f1c40f;
+--accent: #2563eb;      /* Rich blue */
+--lightAccent: #3b82f6; /* Lighter blue */
+--lighterAccent: #60a5fa; /* Sky blue */
 
     /* Background and surface colors - using subtle grays for depth */
     --background: #ffffff;
